@@ -1,51 +1,251 @@
-// LESS related
-@import "core/variables.less";
+/* theme: Default */
 
-// Defaults
-@import "core/base.less";
 
-// Layout
-@import "core/grid.less";
-@import "core/panel.less";
-@import "core/block.less";
-@import "core/article.less";
-@import "core/comment.less";
-@import "core/cover.less";
+//
+// General
+//
 
-// Navs
-@import "core/nav.less";
-@import "core/navbar.less";
-@import "core/subnav.less";
-@import "core/breadcrumb.less";
-@import "core/pagination.less";
-@import "core/tab.less";
-@import "core/thumbnav.less";
+@global-background: #364347;
+@global-border: #5e696d;
 
-// Elements
-@import "core/list.less";
-@import "core/description-list.less";
-@import "core/table.less";
-@import "core/form.less";
+//
+// Typography
+//
 
-// Common
-@import "core/button.less";
-@import "core/icon.less";
-@import "core/close.less";
-@import "core/badge.less";
-@import "core/alert.less";
-@import "core/thumbnail.less";
-@import "core/overlay.less";
-@import "core/animation.less";
+@global-color: #ffffff;
+@global-muted-color: #d6e1e5;
+@global-link-color: #fad46b;
+@global-link-hover-color: #f3bc65;
+@global-contrast-color: #3eb5ac;
 
-// JavaScript
-@import "core/dropdown.less";
-@import "core/modal.less";
-@import "core/offcanvas.less";
-@import "core/switcher.less";
+//
+// Buttons, Navs & Badges
+//
 
-// Need to be loaded last
-@import "core/text.less";
-@import "core/utility.less";
-@import "core/flex.less";
-@import "core/contrast.less";
-@import "core/print.less";
+@global-primary-background: #fad46b;
+@global-success-background: #3eb5ac;
+@global-warning-background: #f58410;
+@global-danger-background: #f84545;
+
+//
+// Alert
+//
+
+@alert-background: #e1eef3;
+@alert-color: #009dcd;
+@alert-success-background: #e1eef3;
+@alert-warning-background: #e1eef3;
+@alert-danger-background: #e1eef3;
+@alert-success-color: #3eb5ac;
+@alert-warning-color: #f58410;
+@alert-danger-color: #f84545;
+
+//
+// Article
+//
+
+@article-title-font-weight: 100;
+@article-title-text-transform: uppercase;
+@article-lead-font-weight: 100;
+
+//
+// Badge
+//
+
+@badge-font-weight: 100;
+@badge-text-transform: none;
+
+//
+// Base
+//
+
+@base-body-font-weight: 100;
+@base-code-color: #f84545;
+@base-em-color: #fad46b;
+@base-heading-font-weight: 100;
+@base-heading-text-transform: uppercase;
+@base-ins-background: #a88cd5;
+@base-mark-background: #3eb5ac;
+@base-selection-background: #fad46b;
+@base-code-font-family: Consolas, monospace, serif;
+@base-pre-background: #3eb5ac;
+
+//
+// Block
+//
+
+@block-muted-background: #e1eef3;
+@block-primary-background: #009dcd;
+@block-secondary-background: #e96300;
+
+//
+// Button
+//
+
+@button-primary-hover-background: #02baf2;
+@button-primary-active-background: #009dcd;
+@button-success-hover-background: #28948c;
+@button-success-active-background: #28948c;
+@button-danger-hover-background: #cc0000;
+@button-danger-active-background: #cc0000;
+@button-background: #fad46b;
+@button-active-background: #a88cd5;
+@button-hover-background: #f3bc65;
+@button-disabled-background: #5e696d;
+
+//
+// Close
+//
+
+@close-alt-background: #93a4aa;
+
+//
+// Contrast
+//
+
+@contrast-color: #fad46b;
+@contrast-inverted-color: #02baf2;
+
+//
+// Description
+//
+
+@description-list-line-font-weight: normal;
+
+//
+// Dropdown
+//
+
+@dropdown-background: #5e696d;
+@dropdown-animation: uk-slide-top-fixed;
+@dropdown-navbar-background: #fad46b;
+@dropdown-search-background: #f3bc65;
+
+//
+// Form
+//
+
+@form-focus-border: #b2c6cd;
+@form-focus-background: #5e696d;
+@form-disabled-background: #e1eef3;
+@form-danger-border: #f84545;
+@form-danger-color: #cc0000;
+@form-danger-background: #e1eef3;
+@form-success-background: #e1eef3;
+@form-success-border: #3eb5ac;
+@form-success-color: #28948c;
+@form-stacked-font-weight: normal;
+@form-advanced-border: #5e696d;
+@form-advanced-checked-color: #02baf2;
+@form-advanced-disabled-border: #e1eef3;
+@form-advanced-disabled-color: #d6e1e5;
+
+//
+// Icon
+//
+
+@icon-font-path: "../../fonts";
+@icon-button-background: #fad46b;
+@icon-button-hover-background: #f3bc65;
+@icon-button-active-background: #f58410;
+
+//
+// List
+//
+
+@list-striped-background: #9175bd;
+
+//
+// Modal
+//
+
+@modal-background: #364347;
+
+//
+// Nav
+//
+
+@nav-header-font-weight: bold;
+
+//
+// Navbar
+//
+
+@navbar-background: #fad46b;
+@navbar-nav-font-weight: 100;
+@navbar-nav-hover-background: #f3bc65;
+@navbar-nav-onclick-background: #f3bc65;
+@navbar-nav-active-background: #f58410;
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-background: #333333;
+@offcanvas-background: #000000;
+@offcanvas-panel-link-color: #fad46b;
+@offcanvas-panel-link-hover-color: #f84545;
+@offcanvas-search-background: #1a1a1a;
+
+//
+// Overlay
+//
+
+@overlay-panel-background: #f84545;
+@overlay-area-content-color: #e1eef3;
+@overlay-caption-background: #000000;
+@overlay-caption-color: #f84545;
+
+//
+// Pagination
+//
+
+@pagination-background: #fad46b;
+@pagination-hover-background: #f3bc65;
+@pagination-onclick-background: #f58410;
+@pagination-disabled-background: #e1eef3;
+
+//
+// Panel
+//
+
+@panel-title-font-weight: 100;
+@panel-box-background: #b2c6cd;
+@panel-box-primary-background: #f84545;
+@panel-box-primary-color: #fad46b;
+@panel-box-primary-title-color: #fad46b;
+@panel-box-secondary-background: #a88cd5;
+@panel-box-secondary-color: #fad46b;
+@panel-box-secondary-title-color: #fad46b;
+@panel-title-text-transform: lowercase;
+@panel-hover-hover-background: #f3bc65;
+
+//
+// Subnav
+//
+
+@subnav-pill-hover-background: #fad46b;
+
+//
+// Tab
+//
+
+@tab-hover-border: #fad46b;
+@tab-hover-background: #fad46b;
+
+//
+// Table
+//
+
+@table-striped-background: #3eb5ac;
+@table-hover-background: #28948c;
+
+//
+// Text
+//
+
+@text-primary-color: #02baf2;
+@text-large-font-weight: 100;
+@text-success-color: #3eb5ac;
+@text-warning-color: #f58410;
+@text-danger-color: #f84545;
