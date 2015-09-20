@@ -6,6 +6,11 @@ html {
   color: #ffffff;
 }
 body {
+  font: 100 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: #364347;
+  color: #ffffff;
   margin: 0;
 }
 a {
